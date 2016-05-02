@@ -5,7 +5,7 @@ Scripts to monitor Lisk nodes
 
 Dependencies
 
-curl
+curl, 
 jq
 
 on ubuntu:  sudo apt-get install jq curl
