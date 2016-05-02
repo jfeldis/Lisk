@@ -3,6 +3,8 @@
 #This script fetches the current block height several from Lisk nodes and display the current block on the node
 #Nodes thean are compared to determine if one is behind.  A log or alert can be generated.
 #requires jq for parsing the jsan output from the nodes - sudo apt-get install jq
+clear
+echo ""
 
 tput sc
 while true
