@@ -13,7 +13,7 @@ do
         #enter the ip address or url of monitored nodes in xxx.xxx.xxx.xxx below.
         node1=$(curl -i -H "Accept: application/json" http://xxx.xxx.xxx.xxx:7000/api/blocks/getHeight 2>&1 | grep "height" | jq '.height')
         node2=$(curl -i -H "Accept: application/json" http://xxx.xxx.xxx.xxx:7000/api/blocks/getHeight 2>&1 | grep "height" | jq '.height')
-        liskio=$(curl -i -H "Accept: application/json" http://login.lisk.io:7000/api/blocks/getHeight 2>&1 | grep "height" | jq '.height')
+        liskio=$(curl -i -H "Accept: application/json" https://testnet.lisk.io/api/blocks/getHeight 2>&1 | grep "height" | jq '.height')
         
         #display the data
         tput rc
